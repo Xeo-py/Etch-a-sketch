@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 20, 40);
+}
+h1{
+    background-color: rgb(180, 50, 220);
+    margin: 0;
+    padding: 8px;
+    color: rgb(20, 20, 40);
+}
+#grid {
+    display: flex;
+    flex-wrap: wrap;      /* CRITICAL: Allows cells to flow to the next row */
+    width: 420px;         /* Pick a size divisible by 16 */
+    height: 420px;
+    border: 2px solid rgb(180, 50, 220);
+    margin: 20px auto;    /* Centers the grid on screen */
+    margin-top: 130px;
+}
+.gridCell {
+    /* 100% / 16 = 6.25% */
+    width: 6.25%; 
+    height: 6.25%;
+    
+    background-color: rgb(240, 240, 255); /* Changed to white so you can see a border */
+    border: 1px solid black;  /* Light border for the 'grid' look */
+    box-sizing: border-box;  /* CRITICAL: Keeps border INSIDE the 6.25% width */
+}
+button{
+    display:block;
+    margin:0 auto;
+    margin-top: 20px;
+    padding: 15px 30px;   /* top/bottom  left/right */
+    font-size: 18px;      /* bigger text */
+    width: 200px;         /* fixed width */
+    height: 60px;
+    border-radius: 10px;
+    background-color: rgb(180, 50, 220);    /* vibrant purple */
+    color: white;
+    border: none;
+}
